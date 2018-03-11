@@ -77,6 +77,14 @@ void decoded_i(FILE *in, FILE *out)
 
 	fread(sym, 1, 1, in);
 	a = searchInBase(sym[0]);
+	if (a == 65)
+	{
+		while ((a == 65) && !feof(in))
+		{
+			fread(sym, 1, 1, in);
+			a = searchInBase(sym[0]);
+		}
+	}
 	if (!feof(in))
 		fread(sym, 1, 1, in);
 
@@ -84,6 +92,14 @@ void decoded_i(FILE *in, FILE *out)
 	while (!feof(in))
 	{
 		b = searchInBase(sym[0]);
+		if (b == 65)
+		{
+			while ((b == 65) && !feof(in))
+			{
+				fread(sym, 1, 1, in);
+				b = searchInBase(sym[0]);
+			}
+		}
 		if (b == 64) break;
 
 		i++;
@@ -104,6 +120,14 @@ void decoded_i(FILE *in, FILE *out)
 			i = 0;
 			fread(sym, 1, 1, in);
 			b = searchInBase(sym[0]);
+			if (b == 65)
+			{
+				while ((b == 65) && !feof(in))
+				{
+					fread(sym, 1, 1, in);
+					b = searchInBase(sym[0]);
+				}
+			}
 			break;
 		}
 		a = b;
