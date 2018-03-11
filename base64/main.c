@@ -47,6 +47,7 @@ int main(int argc, char* argv[])
 			decoded_i(in, out);
 			fclose(in);
 			fclose(out);
+			return 0;
 		}
 		in = fopen(argv[2], "r");
 		if (verification(in)) return 0;
@@ -56,6 +57,9 @@ int main(int argc, char* argv[])
 		fclose(out);
 		return 0;
 	}
+
+	help();
+	return 0;
 }
 
 
