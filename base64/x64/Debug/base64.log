@@ -1,5 +1,8 @@
 ﻿  main.c
 d:\program files\smartgit\bin\master\base64\decoded.h(8): warning C4013: searchInBase: нет определения; предполагается "extern" с возвратом типа "int"
+d:\program files\smartgit\bin\master\base64\decoded.h(11): warning C4133: функция: несовместимые типы - из "char [3]" в "FILE *const "
+d:\program files\smartgit\bin\master\base64\decoded.h(24): warning C4133: функция: несовместимые типы - из "char [3]" в "FILE *const "
+d:\program files\smartgit\bin\master\base64\decoded.h(50): warning C4133: функция: несовместимые типы - из "char [3]" в "FILE *const "
 d:\program files\smartgit\bin\master\base64\main.c(12): warning C4013: strcmp: нет определения; предполагается "extern" с возвратом типа "int"
 d:\program files\smartgit\bin\master\base64\main.c(24): warning C4013: verification: нет определения; предполагается "extern" с возвратом типа "int"
   base64.vcxproj -> D:\Program Files\SmartGit\bin\master\x64\Debug\base64.exe

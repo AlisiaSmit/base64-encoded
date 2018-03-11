@@ -97,8 +97,9 @@ void encoded_f(FILE *in, FILE *out, int num)
 		befor = sym[0];
 		fread(sym, 1, 1, in);
 	}
+	
 	sym[0] = 0;
-	//возможно, здесь еще где-то должна быть проверка на к
+	
 	if ((i % 3) == 1)
 	{
 		value = (sym[0] >> 4) | ((befor & 3) << 4);

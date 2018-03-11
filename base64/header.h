@@ -1,9 +1,5 @@
 char abc[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
-#include "encoded.h"
-#include "decoded.h"
-
-
 void help() 
 {
 	FILE *help = fopen("help.txt", "r");
@@ -16,3 +12,6 @@ void help()
 		c = fgetc(help);
 	}
 }
+
+#include "encoded.h"
+#include "decoded.h"
