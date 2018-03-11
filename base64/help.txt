@@ -1,0 +1,12 @@
+Usage: 
+to encode an arbitrary file "infilename" in Base64-encoded text file "outfilename":
+	base64.exe -e infilename outfilename
+to decode Base64-encoded text file "infilename" in binary file "outfilename" 
+(if the file contains non-base64 characters, an error is displayed):
+	base64.exe -d infilename outfilename
+to decode Base64-encoded text file "infilename" in binary file "outfilename"  
+If the-i option is present, the non-Base64 characters are ignored during decoding:
+	base64.exe -d -i infilename outfilename
+to encode an arbitrary file "infilename" in Base64-encoded text file "outfilename"
+If the-f N option is passed, insert a line feed every N characters in the output file:
+	base64coder.exe -e -f 80 infilename outfilename

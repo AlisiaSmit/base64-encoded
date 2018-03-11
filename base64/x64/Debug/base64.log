@@ -1,0 +1,5 @@
+﻿  main.c
+d:\repos\base64\base64\decoded.h(8): warning C4013: searchInBase: нет определения; предполагается "extern" с возвратом типа "int"
+d:\repos\base64\base64\main.c(12): warning C4013: strcmp: нет определения; предполагается "extern" с возвратом типа "int"
+d:\repos\base64\base64\main.c(24): warning C4013: verification: нет определения; предполагается "extern" с возвратом типа "int"
+  base64.vcxproj -> D:\repos\base64\x64\Debug\base64.exe

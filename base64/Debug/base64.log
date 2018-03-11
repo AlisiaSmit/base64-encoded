@@ -1,0 +1,3 @@
+﻿  main.c
+c:\users\жучок\source\repos\base64\base64\main.c(46): warning C4013: strcmp: нет определения; предполагается "extern" с возвратом типа "int"
+  base64.vcxproj -> C:\Users\Жучок\source\repos\base64\Debug\base64.exe
