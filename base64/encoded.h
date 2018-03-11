@@ -81,6 +81,13 @@ void encoded_f(FILE *in, FILE *out, int num)
 		case 0:
 			value = ((befor & 15) << 2) | (sym[0] >> 6);
 			fprintf(out, "%c", abc[value]);
+			
+			k++;
+			if (k == num)
+			{
+				fprintf(out, "%c", '\n');
+				k = 0;
+			}
 
 			value = (sym[0] & 63);
 			fprintf(out, "%c", abc[value]);
@@ -96,13 +103,33 @@ void encoded_f(FILE *in, FILE *out, int num)
 	{
 		value = (sym[0] >> 4) | ((befor & 3) << 4);
 		fprintf(out, "%c", abc[value]);
+		k++;
+
+		if (k == num)
+		{
+			fprintf(out, "%c", '\n');
+			k = 0;
+		}
 		fprintf(out, "%c", '=');
+		k++;
+
+		if (k == num)
+		{
+			fprintf(out, "%c", '\n');
+			k = 0;
+		}
 		fprintf(out, "%c", '=');
 	}
 	if ((i % 3) == 2)
 	{
 		value = ((befor & 15) << 2) | (sym[0] >> 6);
 		fprintf(out, "%c", abc[value]);
-		fprintf(out, "%c", '=');
+		k++;
+
+		if (k == num)
+		{
+			fprintf(out, "%c", '\n');
+			k = 0;
+		}fprintf(out, "%c", '=');
 	}
 }

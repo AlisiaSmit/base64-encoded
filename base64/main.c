@@ -66,6 +66,7 @@ int verification(FILE *in)
 	{
 		printf("%s", "Error: file not found");
 		fclose(in);
+		help();
 		return 1;
 	}
 	return 0;

@@ -50,6 +50,7 @@ void decoded(FILE *in, FILE *out)
 	}
 }
 
+
 void decoded_i(FILE *in, FILE *out)
 {
 	unsigned char sym[1];
